@@ -103,7 +103,7 @@ function mp_stacks_video_background( $html_output, $post_id ){
 			$video_id = $vimeo_info_array['video_id'];
 
 			//Create iframe with settings for vimeo
-			$html_output .= '<iframe id="mp-stacks-video-bg-vimeo-' . $post_id . '" class="mp-stacks-video-bg-vimeo mp-stacks-video-bg-video"  type="text/html" src="//player.vimeo.com/video/' . $video_id . '?portrait=0&badge=0&color=ff9933&autoplay=1&loop=1" frameborder="0" style="position:absolute; width:100%; height:100%; max-width:999%; top:0; left:0px; z-index:1;" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+			$html_output .= '<iframe id="mp-stacks-video-bg-vimeo-' . $post_id . '" class="mp-stacks-video-bg-vimeo mp-stacks-video-bg-video"  type="text/html" src="//player.vimeo.com/video/' . $video_id . '?background=1" frameborder="0" style="position:absolute; width:100%; height:100%; max-width:999%; top:0; left:0px; z-index:1;" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
 
 		}
 		//If video is coming from an uploaded mp4
